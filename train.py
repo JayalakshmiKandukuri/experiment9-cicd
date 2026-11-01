@@ -21,7 +21,7 @@ def train_model():
     accuracy = accuracy_score(y_test, predictions)
 
     joblib.dump(model, "model.pkl")
-    print("Model training completed!")
+    print("Model retrained after code update!")
     print("Accuracy:", accuracy)
 
     return model, accuracy
